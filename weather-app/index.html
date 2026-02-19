@@ -28,13 +28,50 @@
   </div>
 </nav>
     </header>
-    <h1>Weather App 🌤️</h1>
-    <input type="text" id="city" placeholder="Typing a city">
+
+    <div class="container">
+      
+      <form id="search">
+  <h1>Weather App 🌤️</h1>
+    <input type="text" name="city" id="city" placeholder="Typing a city">
     <!--call the function-->
-    <button onclick="getWeather()">Search</button>
+    <button type="search" id="search" onclick="getWeather()">Search</button>
 
     <div id="result"></div>
+      </form>
+  
+      <div class="weather">
+        <p id="temp_img">32C</p>
+        <p id="temp_descript">Hot</p>
+      </div>
 
-    <script src="weather.js"></script>
+
+      <div class="max-temp">
+<h1>Max Temp</h1>
+<p id="temp_max">40C</p>
+      </div>
+
+       <div class="min-temp">
+<h1>Min Temp</h1>
+<p id="temp_max">12C</p>
+      </div>
+
+
+      <div class="mumidity">
+<h1>Humidity</h1>
+<p id="temp_max">50%</p>
+
+      </div>
+
+
+      <div class="mumidity">
+<h1>Wind</h1>
+      <p id="wind">70km h</p>
+
+      <div id="alert"></div>
+
+    </div>
+    
 </body>
+<script src="weather.js"></script>
 </html>
