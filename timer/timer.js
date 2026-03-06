@@ -1,32 +1,26 @@
-const timer = document.getElementById("timer"); //get the ids
-const start = document.getElementById("start");
-//event click in start
-start.addEventListener("click", function (timer){
-//get the number typing..
-const number = input.value;
+let timer = document.getElementById("timer");
+let start = document.getElementById("start");
 
-
-
-});
-
-//ARRUMAR DEPOIS
-//STOPWATCH
-let stp = document.getElementById("stp");
-let start1 = document.getElementById("start1");
-
-let count = 0;
+let seconds = 0;
 let interval;
+let running = false;
 
-start1.addEventListener("click", function () {
+start.addEventListener("click", function () {
 
-  interval = setInterval(function () {
-    stp.value = count;
-    count++;
+  if (running === false) {
 
-    if (count >= 60) {
-      clearInterval(interval);
-    }
+    interval = setInterval(function () {
+      seconds++;
+      timer.textContent = seconds;
+    }, 1000);
 
-  }, 1000); // 1000ms = 1 segundo
+    running = true;
+
+  } else {
+
+    clearInterval(interval);
+    running = false;
+
+  }
 
 });
