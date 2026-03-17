@@ -1,0 +1,75 @@
+/*reseat browzer*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/*Header code*/
+
+header{
+  margin-bottom: 3%;
+}
+
+  /*sublime*/
+  .navbar .nav-link {
+  position: relative;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff6600;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+
+/*gradient color javascript*/
+.navbar-brand {
+  background: linear-gradient(90deg, #ff6600, #ff3300);
+  /*Premium effect*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*zoom effect*/
+.navbar .nav-link {
+  transition: 0.3s;
+}
+.navbar .nav-link:hover {
+  transform: scale(1.1);
+}
+
+
+
+/*all*/
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1{
+   background: linear-gradient(90deg, #ff6600, #ff3300);
+  /*Premium effect*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-weight: bold;
+  font-size: 50px;
+}
+
+span{
+  color: #000000;
+}
+
+button{
+  font-size: 30px;
+}
