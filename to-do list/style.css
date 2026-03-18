@@ -1,0 +1,111 @@
+/*reseat browzer*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/*Header code*/
+
+header{
+  margin-bottom: 3%;
+}
+
+  /*sublime*/
+  .navbar .nav-link {
+  position: relative;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff6600;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+
+/*gradient color javascript*/
+.navbar-brand {
+  background: linear-gradient(90deg, #ff6600, #ff3300);
+  /*Premium effect*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*zoom effect*/
+.navbar .nav-link {
+  transition: 0.3s;
+}
+.navbar .nav-link:hover {
+  transform: scale(1.1);
+}
+
+
+
+/*************TODOLIST*********/
+
+/* title with gradient text (premium effect) */
+h1 {
+  background: linear-gradient(90deg, #ff6600, #ff3300);
+
+  /* gradient text effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* task card (using Bootstrap base + custom style) */
+.task {
+  background: #f8f9fa; /* bootstrap light */
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* task description */
+.task p {
+  margin: 0;
+  color: #555;
+}
+
+/* task date */
+.task small {
+  color: #888;
+}
+
+/* buttons inside task */
+.task button {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* completed task style */
+.task.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+#addBtn {
+  background: linear-gradient(90deg, #ff6600, #ff3300);
+  color: white;
+  border: none;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+/* hover effect */
+#addBtn:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}

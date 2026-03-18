@@ -46,30 +46,21 @@ header{
   transform: scale(1.1);
 }
 
+/* ===== CALCULATOR LAYOUT ===== */
+/* display custom style */
+#display {
+  max-width: 260px;
+  height: 60px;
+  font-size: 28px;
 
+  background: #000;
+  color: #00ff99;
 
-/*all*/
-.content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  border-radius: 10px;
 }
 
-h1{
-   background: linear-gradient(90deg, #ff6600, #ff3300);
-  /*Premium effect*/
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  font-weight: bold;
-  font-size: 50px;
-}
-
-span{
-  color: #000000;
-}
-
-button{
-  font-size: 30px;
+/* optional hover effect */
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
 }
