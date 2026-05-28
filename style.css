@@ -4,11 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+  background: #000000;
+  color: #ffff;
+  font-family: Arial, sans-serif;
+}
   
 /*Header code*/
 
 header{
   margin-bottom: 3%;
+}
+
+
+h3{
+  color: #ffffff;
 }
 
   /*sublime*/
@@ -46,12 +57,29 @@ header{
   transform: scale(1.1);
 }
 
+/**** CALCULATOR LAYOUT ******************/
+/* display custom style */
+#display {
+  max-width: 260px;
+  height: 60px;
+  font-size: 28px;
 
+  background: #000;
+  color: #00ff99;
+
+  border-radius: 10px;
+}
+
+/* optional hover effect */
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
 
 /*************TODOLIST*********/
 
 /* title with gradient text (premium effect) */
-h1 {
+.todo-title {
   background: linear-gradient(90deg, #ff6600, #ff3300);
 
   /* gradient text effect */
@@ -108,4 +136,112 @@ h1 {
 #addBtn:hover {
   transform: scale(1.03);
   filter: brightness(1.1);
+}
+
+
+/* INDEX - GALERY *********/
+
+
+    /* PROJECTS */
+
+.projects-section{
+  background: #050505;
+}
+
+/* CARD */
+
+.project-card{
+  position: relative;
+
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  text-decoration: none;
+
+  transition: 0.4s;
+
+  border: 2px solid #1a1a1a;
+}
+
+/* IMAGE */
+
+.project-card img{
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+/* OVERLAY */
+
+.project-overlay{
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.2)
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: end;
+
+  padding: 25px;
+
+  color: white;
+}
+
+/* TITLE */
+
+.project-overlay h3{
+  font-size: 28px;
+
+  font-weight: bold;
+}
+
+/* TEXT */
+
+.project-overlay p{
+  color: #cfcfcf;
+
+  margin-top: 5px;
+}
+
+/* HOVER */
+
+.project-card:hover{
+  transform: translateY(-10px);
+
+  box-shadow:
+  0 0 20px rgba(0,195,255,0.4),
+  0 0 50px rgba(0,195,255,0.2);
+
+  border-color: #00c3ff;
+}
+
+/* IMAGE ZOOM */
+
+.project-card:hover img{
+  transform: scale(1.08);
+}
+
+/*WEATHER APP*/
+  .weather-card{
+  width: 100%;
+  max-width: 450px;
+
+  background: #ffffff;
+}
+#weatherIcon{
+  width: 120px;
 }
